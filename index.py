@@ -42,5 +42,4 @@ plt.scatter(new_pred, predicted_new_score, marker='x', s=100)
 plt.xlabel("Study Hours per Week")
 plt.ylabel("Final Marks")
 plt.title("Study Hours vs Final Marks Prediction")
-
 plt.show()
