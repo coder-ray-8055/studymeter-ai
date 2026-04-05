@@ -38,7 +38,7 @@ nav {
     margin-top: 20px;
 
     height: 4rem;
-    width: 90%;
+    width: 95%;
 
     background: rgba(255, 255, 255, 0.15);
     backdrop-filter: blur(12px);
@@ -112,9 +112,9 @@ nav button:hover i {
 }
 
 .home {
-    min-height: 500px;
-    width: 90%;
-    margin: 6.5rem auto;
+    min-height: 470px;
+    width: 95%;
+    margin: 6rem auto 1rem auto;
     border: none;
     border-radius: 10px;
 
@@ -152,15 +152,159 @@ nav button:hover i {
     width: 20rem;
 }
 
-.home h1{
+.home h1 {
     text-align: center;
     font-size: 3rem;
-    padding-top: 2rem;
+    padding-top: 1.5rem;
     font-weight: 900;
     color: white;
-
 }
 
-.color{
-    color: gold;
+.buttons {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+
+    padding-top: 2rem;
+}
+
+.buttons button {
+    padding: 10px 20px;
+    background: rgba(255, 255, 255, 0.15);
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+    border: none;
+    border-radius: 10px;
+    /* color: white; */
+    color: rgba(255, 255, 255, 0.7);
+    font-weight: 700;
+    font-size: 15px;
+    cursor: pointer;
+    transition: all 0.8s ease;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.buttons button:hover {
+    transform: translateY(-3px) scale(1.05);
+    color: white;
+}
+
+.last {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+
+    background: rgba(255, 255, 255, 0.15);
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+
+    height: 4rem;
+    width: 49%;
+    margin: 2.35rem auto;
+    border: none;
+    border-radius: 15px;
+    color: white;
+    font-weight: 700;
+}
+
+.ep01 {
+    text-align: center;
+}
+
+.ep11 {
+    text-align: center;
+}
+
+.about {
+    min-height: 470px;
+    width: 95%;
+    margin: 0rem auto 1rem auto;
+    border: none;
+    border-radius: 10px;
+
+    background: rgba(255, 255, 255, 0.15);
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+}
+
+.about h1 {
+    color: rgb(255, 255, 255);
+    padding-top: 2.5rem;
+    font-weight: 700;
+    text-align: center;
+    font-size: 40px;
+}
+
+.about p {
+    color: rgba(255, 255, 255, 0.7);
+    padding: 3.5rem 4rem 2rem 4rem;
+    font-size: 20px;
+    line-height: 30.5px;
+    font-weight: 500;
+}
+
+.about h5 {
+    color: white;
+    font-size: 20px;
+    font-weight: 700;
+    margin: 1rem 4rem 2rem 4rem;
+}
+
+.about h5 i {
+    font-size: 17px;
+    transform: translateY(-5px);
+}
+
+.how {
+    min-height: 470px;
+    width: 95%;
+    margin: 0rem auto 1rem auto;
+    border: none;
+    border-radius: 10px;
+
+    background: rgba(255, 255, 255, 0.15);
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+}
+
+.how h1 {
+    text-align: center;
+    padding-top: 2.5rem;
+    color: white;
+    font-weight: 700;
+}
+
+.box1 {
+    height: 300px;
+    width: 300px;
+    border: none;
+    border-radius: 10px;
+
+    background: rgba(255, 255, 255, 0.15);
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.box1 i{
+    font-size: 4rem;
+    color: white;
+    font-weight: 700;
+    padding-top: 30px;
+    
+}
+
+.box1 h3{
+    color: white;
+    font-weight: 700;
+    font-size: 1.5rem;
+    padding: 50px 40px 50px 40px;
+    text-align: center;
 }
