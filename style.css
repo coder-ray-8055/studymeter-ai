@@ -291,20 +291,219 @@ nav button:hover i {
     flex-direction: column;
     align-items: center;
     justify-content: center;
+
+    transition: all 0.4s ease;
 }
 
-.box1 i{
+.box1:hover {
+    transform: translateY(-10px) scale(1.03);
+}
+
+.box1 i {
     font-size: 4rem;
     color: white;
     font-weight: 700;
     padding-top: 30px;
-    
+
 }
 
-.box1 h3{
+.box1 h3 {
     color: white;
     font-weight: 700;
     font-size: 1.5rem;
     padding: 50px 40px 50px 40px;
     text-align: center;
+}
+
+.howWrapper {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    margin: 2rem 4rem 1rem 4rem;
+}
+
+.howWrapper .fa-arrow-right {
+    font-size: 10rem;
+    font-weight: 700;
+    color: rgba(255, 255, 255, 0.15);
+}
+
+.howWrapper .fa-circle-arrow-right {
+    font-size: 10rem;
+    font-weight: 700;
+    color: rgba(255, 255, 255, 0.15);
+}
+
+.num {
+    position: absolute;
+    top: 0.1rem;
+    right: 0.3rem;
+    font-size: 2rem;
+    color: rgba(17, 16, 16, 0.368);
+}
+
+.marks {
+    min-height: 470px;
+    width: 95%;
+    margin: 0rem auto 1rem auto;
+    border: none;
+    border-radius: 10px;
+
+    background: rgba(255, 255, 255, 0.15);
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+}
+
+.marks h2 {
+    text-align: center;
+    padding-top: 2.5rem;
+    color: white;
+    font-weight: 700;
+    font-size: 2.5rem;
+}
+
+.form {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    margin: 3rem 4rem 1rem 4rem;
+}
+
+.input1 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.input1 label {
+    font-size: 20px;
+    font-weight: 700;
+    color: white;
+}
+
+.input1 input {
+    height: 2rem;
+    width: 20rem;
+    margin-top: 0.5rem;
+
+    border: none;
+    border-bottom: 2px solid rgba(255, 255, 255, 0.4);
+
+    /* padding-left: 0.5rem; */
+    background-color: transparent;
+    color: white;
+    outline: none;
+}
+
+.input1 input:focus {
+    border-bottom: 2px solid #ffffff;
+}
+
+.input1 input::placeholder {
+    color: rgba(255, 255, 255, 0.5);
+}
+
+.input2 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    margin-top: 4rem;
+}
+
+.input2 label {
+    font-size: 20px;
+    font-weight: 700;
+    color: white;
+}
+
+.input2 input {
+    height: 2rem;
+    width: 21rem;
+    margin-top: 0.5rem;
+
+    border: none;
+    border-bottom: 2px solid rgba(255, 255, 255, 0.4);
+
+    /* padding-left: 0.5rem; */
+    background-color: transparent;
+    color: white;
+    outline: none;
+}
+
+.input2 input:focus {
+    border-bottom: 2px solid #ffffff;
+}
+
+.input2 input::placeholder {
+    color: rgba(255, 255, 255, 0.5);
+}
+
+form {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: self-start;
+    padding-left: 11.7rem;
+}
+
+form button {
+    padding: 10px 20px 10px 20px;
+    background: rgba(255, 255, 255, 0.15);
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+    color: white;
+    font-weight: 700;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: none;
+    border-radius: 10px;
+    margin: 1.5rem 5.5rem;
+    transition: all 0.8s ease;
+    cursor: pointer;
+}
+
+form button:hover {
+    transform: translateY(-5px);
+}
+
+.right {
+    flex: 1;
+    padding-left: 150px;
+}
+
+.result {
+    height: 300px;
+    width: 300px;
+    transition: all 0.4s ease;
+
+    background: rgba(255, 255, 255, 0.15);
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+
+    border: none;
+    border-radius: 10px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    padding: 0px 40px 10px 40px;
+}
+
+.result:hover {
+    transform: translateY(-8px) scale(1.03);
+}
+
+.result i{
+    font-size: 70px;
+    color: white;
+}
+
+.result p{
+    color: white;
+    font-weight: 700;
+    font-size: 20px;
 }
