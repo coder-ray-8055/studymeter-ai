@@ -13,9 +13,9 @@
     <nav>
         <h2><i class="fa-solid fa-bookmark"></i>&nbsp;StudyMeter</h2>
         <ul>
-            <li><a href="">Home</a></li>
-            <li><a href="">About</a></li>
-            <li><a href="">How to use</a></li>
+            <li><a href="#Home">Home</a></li>
+            <li><a href="#About">About</a></li>
+            <li><a href="#How">How to use</a></li>
         </ul>
         <button><i class="fa-solid fa-moon"></i></button>
     </nav>
@@ -27,8 +27,8 @@
         <h1>Predict your <span class="color">marks</span> <br> instantly -Free</h1>
 
         <div class="buttons">
-            <button><i class="fa-solid fa-calculator"></i>&nbsp;View Marks</button>
-            <button><i class="fa-solid fa-circle-play"></i>&nbsp;How to use</button>
+            <button id="Marks"><i class="fa-solid fa-calculator"></i>&nbsp;View Marks</button>
+            <button class="HH"><i class="fa-solid fa-circle-play"></i>&nbsp;How to use</button>
         </div>
 
         <div class="last">
@@ -53,7 +53,7 @@
             </div>
         </div>
     </section>
-    <section class="about">
+    <section class="about" id="About">
         <h1>About StudyMeter</h1>
         <p>StudyMeter is an AI-powered web application designed to help students estimate their exam performance based
             on their
@@ -83,7 +83,7 @@
             Hard work is the key to success.
         </h5>
     </section>
-    <section class="how">
+    <section class="how" id="How">
         <h1>How to Use ?</h1>
         <div class="howWrapper">
             <div class="box1">
@@ -104,17 +104,17 @@
             </div>
         </div>
     </section>
-    <section class="marks">
+    <section class="marks" id="markswindow">
         <h2>View Marks</h2>
         <div class="form">
             <form action="">
                 <div class="input1">
                     <label for="subject">What are you Preparing for</label>
-                    <input type="text" id="subject" placeholder="eg: UPSC">
+                    <input type="text" id="subject" placeholder="eg: UPSC" autocomplete="off">
                 </div>
                 <div class="input2">
                     <label for="hour">Give your study hour per week</label>
-                    <input type="text" id="hour" class="hour" placeholder="eg: 40">
+                    <input type="text" id="hour" class="hour" placeholder="eg: 40" autocomplete="off">
                 </div>
                 <button class="predict">Predict</button>
             </form>

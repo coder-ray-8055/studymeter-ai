@@ -12,6 +12,10 @@ body {
     min-height: 100vh;
 }
 
+html{
+    scroll-behavior: smooth;
+}
+
 @keyframes gradientMove {
     0% {
         background-position: 0% 50%;
@@ -384,13 +388,13 @@ nav button:hover i {
 
 .input1 input {
     height: 2rem;
-    width: 20rem;
+    width: 19rem;
     margin-top: 0.5rem;
 
     border: none;
     border-bottom: 2px solid rgba(255, 255, 255, 0.4);
 
-    /* padding-left: 0.5rem; */
+    padding-left: 1rem;
     background-color: transparent;
     color: white;
     outline: none;
@@ -426,7 +430,7 @@ nav button:hover i {
     border: none;
     border-bottom: 2px solid rgba(255, 255, 255, 0.4);
 
-    /* padding-left: 0.5rem; */
+    padding-left: 1rem;
     background-color: transparent;
     color: white;
     outline: none;

@@ -38,3 +38,16 @@ btn.addEventListener("click", async (e) => {
         }
     }, 1500)
 })
+
+const marks = document.querySelector("#Marks")
+const howw = document.querySelector(".HH")
+
+marks.addEventListener("click", (e)=>{
+    e.preventDefault()
+    window.location.href = "#markswindow"
+})
+
+howw.addEventListener("click", (e)=>{
+    e.preventDefault()
+    window.location.href = "#How"
+})
