@@ -12,7 +12,7 @@ body {
     min-height: 100vh;
 }
 
-html{
+html {
     scroll-behavior: smooth;
 }
 
@@ -501,14 +501,52 @@ form button:hover {
     transform: translateY(-8px) scale(1.03);
 }
 
-.result i{
+.result i {
     font-size: 70px;
     color: white;
 }
 
-.result p{
+.result p {
     color: white;
     font-weight: 700;
     font-size: 20px;
     text-align: center;
+}
+
+.toast {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    background: #222;
+    color: #fff;
+    padding: 12px 18px;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    opacity: 0;
+    transform: translateY(-20px);
+    pointer-events: none;
+    transition: all 0.3s ease;
+}
+
+.toast.show {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.toast.success {
+    background: #28a745;
+    font-weight: 700;
+}
+
+.toast.error {
+    background: #dc3545;
+    font-weight: 700;
+}
+
+.toast.warning {
+    background: #ffc107;
+    color: #fff;
+    font-weight: 700;
 }

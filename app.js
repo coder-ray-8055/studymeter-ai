@@ -7,7 +7,12 @@ btn.addEventListener("click", async (e) => {
     const hours = hour.value
 
     if (hours === "") {
-        console.log("Hours bar is empty")
+        showToast("Enter hours of study", "warning")
+        return
+    }
+
+    if(hours <= 0){
+        showToast("Enter proper values", "error")
         return
     }
 
@@ -30,13 +35,21 @@ btn.addEventListener("click", async (e) => {
             `Based on your ${hours} hours study you are likely to get ${data.marks} marks.`;
 
         if (data.marks > 40) {
-            icon.classList.remove("fa-calculator")
-            icon.classList.add("fa-circle-check")
+            // icon.classList.remove("fa-calculator")
+            icon.className =""
+            icon.classList.add("fa-circle-check", "fa-solid")
         } else {
             icon.classList.remove("fa-calculator")
             icon.classList.add("fa-circle-xmark")
         }
+
+        showToast("Predicted", "success")
     }, 1500)
+    
+    // let marks = data.marks
+    if(data.marks > 100){
+        data.marks = 99.99
+    }
 })
 
 const marks = document.querySelector("#Marks")
@@ -51,3 +64,26 @@ howw.addEventListener("click", (e)=>{
     e.preventDefault()
     window.location.href = "#How"
 })
+
+function showToast(message, type = "success") {
+    const toast = document.getElementById("toast");
+    const msg = document.getElementById("toastMsg");
+    const icon = document.getElementById("toastIcon");
+
+    msg.textContent = message;
+
+    toast.className = "toast show " + type;
+
+    if (type === "success") {
+        icon.innerHTML = "✔️";
+    } else if (type === "error") {
+        icon.innerHTML = "❌";
+    } else if (type === "warning") {
+        icon.innerHTML = "⚠️";
+    }
+
+    setTimeout(() => {
+        toast.classList.remove("show");
+    }, 3000);
+}
+
