@@ -11,7 +11,7 @@ btn.addEventListener("click", async (e) => {
         return
     }
 
-    if(!hours ||hours <= 0){
+    if (!hours || hours <= 0) {
         showToast("Enter proper values", "error")
         return
     }
@@ -26,7 +26,7 @@ btn.addEventListener("click", async (e) => {
 
     const data = await res.json()
     const icon = document.querySelector(".result i")
-    
+
 
     console.log(data)
     if (data.marks > 100) {
@@ -34,12 +34,12 @@ btn.addEventListener("click", async (e) => {
     }
     document.querySelector(".result p").innerText = "Predicting..."
     setTimeout(() => {
-        document.querySelector(".result p").innerText = 
+        document.querySelector(".result p").innerText =
             `Based on your ${hours} hours study you are likely to get ${data.marks} marks.`;
 
         if (data.marks > 40) {
             // icon.classList.remove("fa-calculator")
-            icon.className =""
+            icon.className = ""
             icon.classList.add("fa-circle-check", "fa-solid")
         } else {
             icon.classList.remove("fa-calculator")
@@ -48,9 +48,9 @@ btn.addEventListener("click", async (e) => {
 
         showToast("Predicted", "success")
     }, 1500)
-    
+
     // let marks = data.marks
-    if(data.marks > 100){
+    if (data.marks > 100) {
         data.marks = 99.99
     }
 })
@@ -58,12 +58,12 @@ btn.addEventListener("click", async (e) => {
 const marks = document.querySelector("#Marks")
 const howw = document.querySelector(".HH")
 
-marks.addEventListener("click", (e)=>{
+marks.addEventListener("click", (e) => {
     e.preventDefault()
     window.location.href = "#markswindow"
 })
 
-howw.addEventListener("click", (e)=>{
+howw.addEventListener("click", (e) => {
     e.preventDefault()
     window.location.href = "#How"
 })
@@ -90,3 +90,18 @@ function showToast(message, type = "success") {
     }, 3000);
 }
 
+
+const toggler = document.querySelector(".toggle")
+
+
+toggler.addEventListener("click", (e) => {
+    document.body.classList.toggle("dark")
+
+    if (document.body.classList.contains("dark")) {
+        toggler.classList.remove("fa-moon")
+        toggler.classList.add("fa-sun")
+    } else {
+        toggler.classList.remove("fa-sun")
+        toggler.classList.add("fa-moon")
+    }
+})

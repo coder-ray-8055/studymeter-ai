@@ -550,3 +550,90 @@ form button:hover {
     color: #fff;
     font-weight: 700;
 }
+
+body.dark {
+    background: linear-gradient(-45deg, #020617, #0f172a, #1e1b4b, #27272a);
+    background-size: 400% 400%;
+    animation: gradientMove 18s ease infinite;
+}
+
+body.dark nav,
+body.dark .home,
+body.dark .about,
+body.dark .how,
+body.dark .marks,
+body.dark .box1,
+body.dark .result,
+body.dark .last {
+    background: rgba(0, 0, 0, 0.35);
+    backdrop-filter: blur(14px);
+    -webkit-backdrop-filter: blur(14px);
+    border: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+body.dark nav ul li a {
+    color: rgba(255, 255, 255, 0.65);
+}
+
+body.dark nav ul li a:hover {
+    color: #ffffff;
+}
+
+body.dark .bubble .Bubb {
+    background: rgba(0, 0, 0, 0.35);
+    border: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+body.dark .buttons button,
+body.dark form button,
+body.dark nav button {
+    background: rgba(0, 0, 0, 0.35);
+    color: rgba(255, 255, 255, 0.75);
+    border: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+body.dark .buttons button:hover,
+body.dark form button:hover {
+    color: #fff;
+    transform: translateY(-4px) scale(1.05);
+}
+
+body.dark input {
+    border-bottom: 2px solid rgba(255, 255, 255, 0.25);
+    color: #fff;
+}
+
+body.dark input:focus {
+    border-bottom: 2px solid #38bdf8;
+    /* neon blue focus */
+}
+
+body.dark p {
+    color: rgba(255, 255, 255, 0.8);
+}
+
+body.dark h1,
+body.dark h2,
+body.dark h3,
+body.dark h5 {
+    color: #ffffff;
+}
+
+body.dark i {
+    color: rgba(255, 255, 255, 0.85);
+}
+
+body.dark .result:hover {
+    transform: translateY(-8px) scale(1.04);
+    box-shadow: 0 0 25px rgba(56, 189, 248, 0.25);
+}
+
+body.dark .box1:hover {
+    transform: translateY(-10px) scale(1.05);
+    box-shadow: 0 0 25px rgba(139, 92, 246, 0.25);
+}
+
+body.dark .toast {
+    background: #111;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+}
