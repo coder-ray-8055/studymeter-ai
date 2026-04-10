@@ -2,21 +2,21 @@
 
 > Predict your exam performance based on your weekly study hours using Machine Learning.
 
-**StudyMeter AI** is a beginner-friendly Machine Learning project that predicts a student's **final exam marks** based on their **weekly study hours** using **Linear Regression**.
+**StudyMeter AI** is a beginner-friendly yet practical Machine Learning project that predicts a student's **final exam marks** based on their **weekly study hours** using **Linear Regression**.
 
-It demonstrates how real-world data can be used to uncover patterns and make meaningful predictions.
+It showcases how real-world data can be transformed into meaningful insights and predictions using simple ML techniques.
 
 ---
 
 ## 🚀 Project Overview
 
-Many students often ask:
+Many students often wonder:
 
-> *“If I study more, will my marks improve?”*
+> *“If I study more, will my marks actually improve?”*
 
-This project answers that question using **data-driven insights**.
+This project answers that question using **data-driven analysis**.
 
-The model is trained on a dataset containing students' study hours and their corresponding exam scores. It learns the relationship between effort and performance, allowing users to input their own study hours and get a predicted result.
+The model is trained on a dataset containing students' study hours and their corresponding exam scores. It learns the relationship between effort and performance, allowing users to input their own study hours and receive an estimated score.
 
 ---
 
@@ -29,7 +29,7 @@ The model is trained on a dataset containing students' study hours and their cor
 - **Independent Variable (X):** Study Hours per Week  
 - **Dependent Variable (y):** Final Exam Marks  
 
-The model fits a best-fit line to the data and uses it to make predictions.
+The model fits a **best-fit regression line** to the dataset and uses it to predict outcomes for new inputs.
 
 ---
 
@@ -37,9 +37,10 @@ The model fits a best-fit line to the data and uses it to make predictions.
 
 - 📈 Train a Linear Regression model  
 - 🔍 Predict marks based on study hours  
-- 📊 Evaluate performance using standard ML metrics  
+- 📊 Evaluate model using standard ML metrics  
 - 🖥️ Visualize data with regression graph  
 - 🎯 Highlight user prediction on the chart  
+- ⚡ Fast and simple prediction logic  
 
 ---
 
@@ -47,12 +48,12 @@ The model fits a best-fit line to the data and uses it to make predictions.
 
 The model is evaluated using:
 
-- **MAE (Mean Absolute Error)** – Average prediction error  
-- **MSE (Mean Squared Error)** – Penalizes larger errors  
-- **RMSE (Root Mean Squared Error)** – Standard deviation of errors  
-- **R² Score** – Measures how well the model fits the data  
+- **MAE (Mean Absolute Error)** – Measures average prediction error  
+- **MSE (Mean Squared Error)** – Penalizes larger errors more heavily  
+- **RMSE (Root Mean Squared Error)** – Standard deviation of prediction errors  
+- **R² Score** – Indicates how well the model fits the data  
 
-> The model achieves a strong R² score (~0.93), indicating a good fit.
+> ✅ The model achieves an **R² score of ~0.93**, indicating a strong correlation between study hours and exam performance.
 
 ---
 
@@ -64,7 +65,7 @@ The generated graph includes:
 - 📈 Regression line (model prediction)  
 - ❌ Highlighted user prediction  
 
-This helps in understanding how study hours impact performance.
+This visualization helps users clearly understand how study time impacts performance.
 
 ---
 

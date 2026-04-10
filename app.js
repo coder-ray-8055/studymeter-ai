@@ -11,7 +11,7 @@ btn.addEventListener("click", async (e) => {
         return
     }
 
-    if(hours <= 0){
+    if(!hours ||hours <= 0){
         showToast("Enter proper values", "error")
         return
     }
@@ -29,6 +29,9 @@ btn.addEventListener("click", async (e) => {
     
 
     console.log(data)
+    if (data.marks > 100) {
+        data.marks = 99.99
+    }
     document.querySelector(".result p").innerText = "Predicting..."
     setTimeout(() => {
         document.querySelector(".result p").innerText = 
