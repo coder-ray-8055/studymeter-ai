@@ -1,77 +1,105 @@
 # 📚 StudyMeter AI
 
-> Predict your exam performance based on your weekly study hours using Machine Learning.
-
-**StudyMeter AI** is a beginner-friendly yet practical Machine Learning project that predicts a student's **final exam marks** based on their **weekly study hours** using **Linear Regression**.
-
-It showcases how real-world data can be transformed into meaningful insights and predictions using simple ML techniques.
+Predict your exam performance based on your weekly study hours using Machine Learning.
 
 ---
 
 ## 🚀 Project Overview
 
-Many students often wonder:
+**StudyMeter AI** is a simple and beginner-friendly web application that predicts a student's **exam marks** based on their **weekly study hours**.
 
-> *“If I study more, will my marks actually improve?”*
+It uses a Machine Learning model (Linear Regression) to find the relationship between study time and performance.
 
-This project answers that question using **data-driven analysis**.
+This project helps students:
 
-The model is trained on a dataset containing students' study hours and their corresponding exam scores. It learns the relationship between effort and performance, allowing users to input their own study hours and receive an estimated score.
-
----
-
-## 🧠 Machine Learning Approach
-
-**Algorithm Used:** Linear Regression  
-
-### 📌 Variables
-
-- **Independent Variable (X):** Study Hours per Week  
-- **Dependent Variable (y):** Final Exam Marks  
-
-The model fits a **best-fit regression line** to the dataset and uses it to predict outcomes for new inputs.
+- Understand how study hours affect results  
+- Stay consistent with their preparation  
+- Get a rough idea of expected marks  
 
 ---
 
-## 📊 Key Features
+## ✨ Features
 
-- 📈 Train a Linear Regression model  
-- 🔍 Predict marks based on study hours  
-- 📊 Evaluate model using standard ML metrics  
-- 🖥️ Visualize data with regression graph  
-- 🎯 Highlight user prediction on the chart  
-- ⚡ Fast and simple prediction logic  
-
----
-
-## 📈 Model Evaluation Metrics
-
-The model is evaluated using:
-
-- **MAE (Mean Absolute Error)** – Measures average prediction error  
-- **MSE (Mean Squared Error)** – Penalizes larger errors more heavily  
-- **RMSE (Root Mean Squared Error)** – Standard deviation of prediction errors  
-- **R² Score** – Indicates how well the model fits the data  
-
-> ✅ The model achieves an **R² score of ~0.93**, indicating a strong correlation between study hours and exam performance.
+- 🎯 Instant marks prediction  
+- ⚡ Fast and responsive UI  
+- 🌙 Dark mode toggle  
+- 🔔 Toast notifications for feedback  
+- 📊 Clean and modern glassmorphism design  
+- 🧠 ML-powered backend  
 
 ---
 
-## 📊 Visualization
+## 🛠️ Tech Stack
 
-The generated graph includes:
+Frontend:
 
-- 🔵 Actual student data points  
-- 📈 Regression line (model prediction)  
-- ❌ Highlighted user prediction  
+- HTML  
+- CSS  
+- JavaScript  
 
-This visualization helps users clearly understand how study time impacts performance.
+Backend:
+
+- Python (Flask)  
+
+Machine Learning:
+
+- Linear Regression  
 
 ---
 
-## ⚙️ Installation & Setup
+## 📌 How to Use
 
-```bash
-git clone https://github.com/your-username/studymeter-ai.git
-cd studymeter-ai
-pip install pandas numpy matplotlib scikit-learn
+1. Enter what you are preparing for (optional)  
+2. Enter your weekly study hours  
+3. Click on Predict  
+4. Instantly see your predicted marks  
+
+---
+
+## ⚙️ How It Works
+
+- The user inputs study hours  
+- Data is sent to the backend using Fetch API  
+- A trained ML model predicts marks  
+- Result is displayed on the screen  
+
+---
+
+## 📷 UI Sections
+
+- Home section with stats and CTA  
+- About section explaining the project  
+- How-to-use guide  
+- Prediction form with result display  
+
+---
+
+## ⚠️ Note
+
+This prediction is based on a simplified model.  
+Actual results may vary depending on multiple factors like:
+
+- Study quality  
+- Consistency  
+- Exam difficulty  
+
+---
+
+## 💡 Future Improvements
+
+- Add subject-wise prediction  
+- Improve ML model accuracy  
+- Add user history tracking  
+- Deploy online (Netlify + Render)  
+
+---
+
+## 👨‍💻 Author
+
+Ray
+
+---
+
+## ⭐ Final Thought
+
+"Although we predict your marks, your actual results depend on your hard work."
