@@ -116,15 +116,28 @@ nav button:hover i {
 }
 
 .home {
-    min-height: 470px;
+    min-height:600px;
     width: 95%;
     margin: 6rem auto 1rem auto;
     border: none;
     border-radius: 10px;
 
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
     background: rgba(255, 255, 255, 0.15);
     backdrop-filter: blur(12px);
     -webkit-backdrop-filter: blur(12px);
+}
+
+.wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    height: 100%;
 }
 
 .bubble {
@@ -196,7 +209,7 @@ nav button:hover i {
     color: white;
 }
 
-.last {
+/* .last {
     display: flex;
     align-items: center;
     justify-content: space-around;
@@ -212,6 +225,54 @@ nav button:hover i {
     border-radius: 15px;
     color: white;
     font-weight: 700;
+} */
+
+.last {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    /* Content break hone par niche shift ho jayega */
+
+    background: rgba(255, 255, 255, 0.15);
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+
+    /* Height ko auto rakhein taaki content fit ho sake */
+    min-height: 4rem;
+    height: auto;
+
+    /* Width ko fixed 49% ki jagah responsive banayein */
+    width: 90%;
+    max-width: 600px;
+
+    margin: 2.35rem auto;
+    padding: 10px;
+    /* Thoda gap dene ke liye */
+    border: none;
+    border-radius: 15px;
+    color: white;
+    font-weight: 700;
+    gap: 10px;
+    /* Items ke beech internal space */
+}
+
+/* Icons (ellipsis) ko mobile par chupa sakte hain agar space kam ho */
+@media (max-width: 600px) {
+    .last .fa-ellipsis-vertical {
+        display: none;
+    }
+
+    .last {
+        flex-direction: row;
+        justify-content: space-evenly;
+    }
+
+    .e1 {
+        flex: 1 1 40%;
+        /* Mobile par 2-2 items dikhenge */
+        margin-bottom: 5px;
+    }
 }
 
 .ep01 {
