@@ -43,7 +43,7 @@ Backend:
 
 Machine Learning:
 
-- Linear Regression  
+- Linear Regression - scikit-learn
 
 ---
 
@@ -62,7 +62,7 @@ Machine Learning:
 - Data is sent to the backend using Fetch API  
 - A trained ML model predicts marks  
 - Result is displayed on the screen  
-
+- Analyse your result and enjoy this website 
 ---
 
 ## 📷 UI Sections
